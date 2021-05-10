@@ -10,33 +10,29 @@ import static org.hamcrest.Matchers.equalTo;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class TestMain {
-    private  WebDriver  driver = new ChromeDriver();
-
+    private  WebDriver driver;
 
     @BeforeAll
     static void connect(){
         WebDriverManager.chromedriver().setup();
-        System.out.println("---> connect to DB");
     }
     @BeforeEach
     void setup(){
-        System.out.println("---> Before Each Test");
+        driver = new ChromeDriver();
     }
     @AfterEach
     void teardown(){
         driver.quit();
-        System.out.println("----> Tear Down ---> ");
     }
     @AfterAll
     static void close(){
-        System.out.println("----> close DB connection");
     }
 
 //    test starts here
     @ParameterizedTest
     @ValueSource(strings="Sii Poland")
+    @Tag("Sii")
     @Tag("regression")
-    @Order(1)
     void SiiPortal(String pageTitle){
        driver.get("https://sii.pl/en/");
        driver.manage().window().maximize();
@@ -46,8 +42,8 @@ public class TestMain {
 
     @ParameterizedTest
     @ValueSource(strings="Onet – Jesteś na bieżąco")
+    @Tag("Onet")
     @Tag("regression")
-    @Order(2)
     void Onet(String pageTitle){
         driver.get("https://www.onet.pl/");
         driver.manage().window().maximize();
@@ -57,8 +53,8 @@ public class TestMain {
 
     @ParameterizedTest
     @ValueSource(strings="Kotuszkowo- blog o kotach")
+    @Tag("Kotusz")
     @Tag("regression")
-    @Order(3)
     void Kotusz(String pageTitle){
         driver.get("http://kotuszkowo.pl/");
         driver.manage().window().maximize();
@@ -68,8 +64,8 @@ public class TestMain {
 
     @ParameterizedTest
     @ValueSource(strings="Filmweb - filmy takie jak Ty!")
+    @Tag("FilmWeb")
     @Tag("regression")
-    @Order(4)
     void FilmWeb(String pageTitle){
         driver.get("https://www.filmweb.pl/");
         driver.manage().window().maximize();
@@ -79,8 +75,8 @@ public class TestMain {
 
     @ParameterizedTest
     @ValueSource(strings="WebDriver :: Documentation for Selenium")
+    @Tag("Selnium")
     @Tag("regression")
-    @Order(5)
     void SeleniumWeb(String pageTitle){
         driver.get("https://www.selenium.dev/documentation/en/webdriver/");
         driver.manage().window().maximize();
