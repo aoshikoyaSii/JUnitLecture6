@@ -1,0 +1,18 @@
+764 [main] DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome=90 in cache (valid until 15:05:26 17/05/2021 CEST)
+764 [main] DEBUG i.g.b.wdm.cache.ResolutionCache - Resolution chrome90=90.0.4430.24 in cache (valid until 08:11:06 18/05/2021 CEST)
+764 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 90.0.4430.24 (resolved driver for Chrome 90)
+780 [main] TRACE i.g.b.wdm.cache.CacheHandler - Checking if chromedriver exists in cache
+802 [main] TRACE i.g.b.wdm.cache.CacheHandler - Filter cache by chromedriver -- input list [C:\Users\AOshikoya\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe, C:\Users\AOshikoya\.cache\selenium\resolution.properties] -- output list [C:\Users\AOshikoya\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe] 
+802 [main] TRACE i.g.b.wdm.cache.CacheHandler - Filter cache by 90.0.4430.24 -- input list [C:\Users\AOshikoya\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe] -- output list [C:\Users\AOshikoya\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe] 
+802 [main] TRACE i.g.b.wdm.cache.CacheHandler - Filter cache by WIN -- input list [C:\Users\AOshikoya\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe] -- output list [C:\Users\AOshikoya\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe] 
+802 [main] DEBUG i.g.bonigarcia.wdm.WebDriverManager - Driver chromedriver 90.0.4430.24 found in cache
+802 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\AOshikoya\.cache\selenium\chromedriver\win32\90.0.4430.24\chromedriver.exe
+802 [main] INFO  TestPackage.TestBase - >>> Application starts  <<<<<<<
+2437 [main] INFO  TestPackage.TestBase - Run Before each Test
+2453 [main] INFO  TestPackage.TestMain - >>>>>> Start (SiiPortal) test <<<<<<
+2838 [main] DEBUG TestPackage.TestMain - webpage url: https://siiportal.sii.pl
+2839 [main] DEBUG TestPackage.TestMain - expected Title: Kemp Login Screen, Actual Title: Kemp Login Screen
+2839 [main] INFO  TestPackage.TestMain - CORRECT - no error found
+2869 [main] DEBUG TestPackage.TestMain - login page welcome message: 
+2869 [main] ERROR TestPackage.TestMain - ERROR report - found error
+3510 [main] INFO  TestPackage.TestBase - >>>> Run After each Test <<<< 
